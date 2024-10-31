@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assent/css/styles.css">
+    <style>
+        .video-carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .video-carousel video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-wrapper {
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .play-button:focus {
+            outline: none;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="letra titulo a">Feliz Aniversario</h1>
+        <p class="date titulo"><b>28/11/2020</b> </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card" style="background-image: url('./assent/img/image1.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image2.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image3.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image4.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image5.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image6.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image7.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image8.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image9.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image10.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image11.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/image12.jpeg');"></div>
+           
+            
+        </div>
+        
+        <div class="letter-container mt-5">
+            <h2 class="titulo2 letra">Mi Carta para Ti</h2>
+            <div class="letter-content letra">
+                <p></p>
+                <p>
+                    Querida Jeimy,
+                </p>
+                <p>
+                    Feliz 28 de octubre, el día que marcó el inicio de nuestra hermosa historia. Hace 3 años 11 meses, en esta fecha especial, nos conocimos y desde entonces, cada momento juntos ha sido pura magia.
+                </p>
+                <p>
+                    Gracias por ser la luz que ilumina mi vida, por tu amor incondicional, tu apoyo y tu sonrisa radiante. Eres mi compañera perfecta, mi mejor amiga y mi alma gemela.
+                </p>
+                <p>Cada día contigo es un regalo, cada risa una joya y cada momento un recuerdo inolvidable. Me enamoro más de ti con cada paso que damos juntos.
+                </p>
+                <p>En este día tan especial, quiero agradecerte por:
+                </p>
+                <p> ⁠Tu amor sincero</p>
+                <p>
+                    ⁠Tu apoyo incondicional
+                </p>
+                <p>  ⁠Tus sonrisas que iluminan mi día</p>
+                <p>Tus abrazos que me hacen sentir seguro</p>
+                <p>Jeimy, eres mi todo. Te amo más que ayer, pero menos que mañana.</p>
+                <p>Feliz aniversario de nuestro encuentro, mi amor.
+                </p>
+                <p>Con todo mi corazón,</p>
+                <p>Tu Dani ❤️</p>
+            </div>
+        </div>
+
+        <!-- Carrusel de videos  d -->
+        <div class="container mt-5 video-carousel">
+            <h2 class="titulo2  text-center">Mejores Momentos</h2>
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-wrapper">
+                            <video id="video1" width="600" height="400" controls>
+                                <source src="./assent/videos/video1.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video1')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video2" width="600" height="400" controls>
+                                <source src="./assent/videos/video2.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video2')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item a ">
+                        <div class="video-wrapper">
+                            <video id="video3" width="600" height="400" controls>
+                                <source src="./assent/videos/video3.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video3')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video4" width="600" height="400" controls>
+                                <source src="./assent/videos/video4.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video4')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video5" width="600" height="400" controls>
+                                <source src="./assent/videos/video5.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video5')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video6" width="600" height="400" controls>
+                                <source src="./assent/videos/video6.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video6')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video7" width="600" height="400" controls>
+                                <source src="./assent/videos/video7.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video7')">&#9658;</button>
+                        </div>
+                    </div>
+                  
+             
+                </div>
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assent/js/script.js"></script>
+    <script>
+        function playPause(videoId) {
+            var video = document.getElementById(videoId);
+            var button = video.nextElementSibling;
+            if (video.paused) {
+                video.play();
+                button.style.display = 'none';
+            } else {
+                video.pause();
+                button.style.display = 'block';
+            }
+
+            video.onended = function() {
+                button.style.display = 'block';
+            };
+        }
+    </script>
+</body>
+</html>
